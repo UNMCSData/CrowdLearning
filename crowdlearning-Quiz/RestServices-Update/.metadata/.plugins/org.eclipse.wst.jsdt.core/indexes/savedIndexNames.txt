@@ -1,0 +1,9 @@
+INDEX VERSION 1.122+G:\webservices\workspace\gradstudy\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3197616373.index
+2271672501.index
+2996493072.index
+885331221.index
+1840363667.index
+4262259759.index
+134219500.index
+2271672501.index

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js">
+    </script>
+     <script type="text/javascript" src="./instafeed-master/instafeed.js-master/instafeed.min.js">
+     </script>
+  </head>
+  <body onload="getimage('inlobos')">
+    
+<div><div id="instafeed"></div></div>
+
+<script type="text/javascript">
+function getimage(tagname){
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: tagname,
+        clientId: '7db162c1ae6b4e1c88793d5b783162ef',
+        template: '<a href="{{link}}"><img src="{{image}}"/></a>',
+        useHttp: true
+    });
+    feed.run();
+  }
+</script>
+
+  </body>
+</html>

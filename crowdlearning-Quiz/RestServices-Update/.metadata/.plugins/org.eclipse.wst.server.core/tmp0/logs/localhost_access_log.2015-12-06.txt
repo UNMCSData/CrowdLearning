@@ -1,0 +1,7 @@
+127.0.0.1 - - [06/Dec/2015:23:49:42 -0700] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [06/Dec/2015:23:49:43 -0700] "GET /crowdcs/home.html HTTP/1.1" 200 2726
+0:0:0:0:0:0:0:1 - - [06/Dec/2015:23:49:44 -0700] "GET /crowdcs/assets/css/site-styles.css HTTP/1.1" 404 1019
+0:0:0:0:0:0:0:1 - - [06/Dec/2015:23:49:44 -0700] "GET /crowdcs/WebContent/WEB-INF/images/p4.png HTTP/1.1" 404 1031
+0:0:0:0:0:0:0:1 - - [06/Dec/2015:23:49:44 -0700] "GET /crowdcs/WebContent/WEB-INF/images/p3.jpg HTTP/1.1" 404 1031
+0:0:0:0:0:0:0:1 - - [06/Dec/2015:23:49:44 -0700] "GET /crowdcs/WebContent/WEB-INF/images/p5.jpg HTTP/1.1" 404 1031
+0:0:0:0:0:0:0:1 - - [06/Dec/2015:23:49:44 -0700] "GET /crowdcs/WebContent/WEB-INF/images/p7.png HTTP/1.1" 404 1031

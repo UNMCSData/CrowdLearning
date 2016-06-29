@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration PUBLIC "-//log4j/log4j Configuration//EN" "log4j.dtd">
+
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+    
+    <appender name="STDOUT" class="org.apache.log4j.ConsoleAppender">
+       <layout class="org.apache.log4j.PatternLayout"> 
+          <param name="ConversionPattern" value="%d{HH:mm:ss,SSS} %-5p %c.%M:%L - %m%n"/> 
+       </layout> 
+    </appender>
+    
+
+	<appender name="ROLLING_FILE_DEBUG" class="org.apache.log4j.RollingFileAppender">
+		<param name="file" value="${catalina.home}/logs/Enterprise_services.log" />
+		<!--  param name="maxFileSize" value="10000KB" / -->
+		<!-- param name="maxBackupIndex" value="25" / -->
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%d{HH:mm:ss,SSS} %-5p %c.%M:%L - %m%n" />
+		</layout>
+	</appender>    
+	
+	<logger name="org.apache.axis">
+		<level value="ERROR" />
+	</logger>
+
+	<logger name="org.apache.commons.beanutils">
+		<level value="ERROR" />
+	</logger>	
+    
+	<logger name="org.springframework">
+		<level value="ERROR" />
+	</logger>
+	    
+    <root>
+        <priority value="INFO"/> 
+        <appender-ref ref="STDOUT" />
+        <appender-ref ref="ROLLING_FILE_DEBUG" /> 
+    </root> 
+    
+</log4j:configuration> 

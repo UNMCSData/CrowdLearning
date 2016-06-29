@@ -1,0 +1,9 @@
+.carousel {
+  max-height: 200px;
+  overflow: hidden;
+
+  .item img {
+    width: 100%;
+    height: auto;
+  }
+}
